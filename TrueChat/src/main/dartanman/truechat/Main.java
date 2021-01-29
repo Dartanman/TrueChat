@@ -7,6 +7,7 @@ package main.dartanman.truechat;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import main.dartanman.truechat.commands.ClearChat;
 import main.dartanman.truechat.commands.TrueChatCmd;
 import main.dartanman.truechat.events.AntiAdListener;
 import main.dartanman.truechat.events.AntiSpamListener;
@@ -36,6 +37,7 @@ public class Main extends JavaPlugin{
 		getConfig().options().copyDefaults(true);
 		saveConfig();
 		getCommand("truechat").setExecutor(new TrueChatCmd(this));
+		getCommand("clearchat").setExecutor(new ClearChat(this));
 		getServer().getPluginManager().registerEvents(new AntiSpamListener(this), this);
 		getServer().getPluginManager().registerEvents(new AntiAdListener(this), this);
 		getServer().getPluginManager().registerEvents(new FrozenChatListener(this), this);

@@ -198,5 +198,60 @@ public class GrammarUtils {
 		}
 		return message;
 	}
+	
+	/**
+	 * Attempts to fix slang words through various checks
+	 * Currently UNUSED until further progress is made.
+	 * @param input
+	 *   The string being checked for slang
+	 * @return
+	 *   The corrected string
+	 */
+	public static String fixSlang(String input) {
+		String message = input;
+		if(message.contains(" aint ")) {
+			if(message.toLowerCase().contains(" i ")) {
+				message = message.replace(" aint ", " am not ");
+			}else if(message.toLowerCase().contains(" you ") || message.toLowerCase().contains(" they ")) {
+				message = message.replace(" aint ", " are not ");
+			}else if(message.toLowerCase().contains(" he ") || message.toLowerCase().contains(" she ")) {
+				message = message.replace(" aint ", " is not ");
+			}
+		}
+		if(message.contains(" ain't ")) {
+			if(message.toLowerCase().contains(" i ")) {
+				message = message.replace(" ain't ", " am not ");
+			}else if(message.toLowerCase().contains(" you ") || message.toLowerCase().contains(" they ")) {
+				message = message.replace(" ain't ", " are not ");
+			}else if(message.toLowerCase().contains(" he ") || message.toLowerCase().contains(" she ")) {
+				message = message.replace(" ain't ", " is not ");
+			}
+		}
+		if(message.contains(" dunno ")) {
+			message = message.replace(" dunno ", " don't know ");
+		}
+		if(message.contains(" gimme ")) {
+			message = message.replace(" gimme ", " give me ");
+		}
+		if(message.contains(" gonna ")) {
+			message = message.replace(" gonna ", " going to ");
+		}
+		if(message.contains(" gotta ")) {
+			message = message.replace(" gotta ", " got to ");
+		}
+		if(message.contains(" innit ")) {
+			message = message.replace(" innit ", " isn't it ");
+		}
+		if(message.contains(" kinda ")) {
+			message = message.replace(" kinda ", " kind of ");
+		}
+		if(message.contains(" methinks ")) {
+			message = message.replace(" methinks ", " I think ");
+		}
+		
+		
+		return message;
+		
+	}
 
 }

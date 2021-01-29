@@ -22,7 +22,7 @@ AntiSpam:
 AntiAdvertisement:
   AllowIPAddresses: false
   AllowWebsites: false
-  WebExtensions: 'com/net/org/co/uk/info/tk/xyz'
+  WebExtensions: 'com/net/org/tk/xyz'
 AntiSwear:
   AllowSwearing: false
   SwearWords: 'censored/for/the/Internet'
