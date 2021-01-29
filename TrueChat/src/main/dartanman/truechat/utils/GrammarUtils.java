@@ -1,6 +1,6 @@
 package main.dartanman.truechat.utils;
 
-public class PunctuationFixer {
+public class GrammarUtils {
 	
 	public static String fixContractions(String input) {
 		String message = input;
