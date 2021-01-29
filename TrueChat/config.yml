@@ -28,4 +28,3 @@ AntiSwear:
   SwearWords: 'censored/for/the/Internet'
 Grammar:
   FixContractions: true
-  FixSlang: true

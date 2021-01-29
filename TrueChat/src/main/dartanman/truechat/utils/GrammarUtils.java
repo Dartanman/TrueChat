@@ -52,6 +52,9 @@ public class GrammarUtils {
 		if(message.contains(" howd ")) {
 			message = message.replace(" howd ", " how'd ");
 		}
+		if(message.contains(" howre ")) {
+			message = message.replace(" howre ", "how're");
+		}
 		if(message.contains(" hows ")) {
 			message = message.replace(" hows ", " how's ");
 		}
