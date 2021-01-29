@@ -5,7 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import main.dartanman.truechat.Main;
-import main.dartanman.truechat.utils.PunctuationFixer;
+import main.dartanman.truechat.utils.GrammarUtils;
 
 public class GrammarListener implements Listener{
 	
@@ -18,7 +18,7 @@ public class GrammarListener implements Listener{
 	public void onChat(AsyncPlayerChatEvent event) {
 		if(plugin.getConfig().getBoolean("Grammar.FixContractions")) {
 			String message = event.getMessage();
-			message = PunctuationFixer.fixContractions(message);
+			message = GrammarUtils.fixContractions(message);
 			event.setMessage(message);
 		}
 	}

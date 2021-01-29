@@ -25,6 +25,6 @@ AntiAdvertisement:
   WebExtensions: 'com/net/org/co/uk/info/tk/xyz'
 AntiSwear:
   AllowSwearing: false
-  SwearWords: 'censoredForTheInternet'
+  SwearWords: 'censored/for/the/Internet'
 Grammar:
   FixContractions: true
