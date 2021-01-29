@@ -1,0 +1,9 @@
+name: TrueChat
+version: 1.0.0
+author: Dartanman
+main: main.dartanman.truechat.Main
+commands:
+  truechat:
+    description: TrueChat base command
+    usage: /<command>
+    aliases: [tchat, tc]

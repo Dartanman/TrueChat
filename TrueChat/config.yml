@@ -1,0 +1,30 @@
+# TrueChat by Dartanman
+Messages:
+  NoPermission: '&cInsufficient permissions.'
+  NoArgs: '&cTry &a/truechat help&c.'
+  IncorrectArgs: '&cIncorrect args! Ensure you are using the command correctly.'
+  GlobalChatClear: '&aChat cleared by &6<player>&a.'
+  SelfChatClear: '&aYou cleared your chat.'
+  PlayerChatClearSent: "&aYou cleared &6<player>&a's chat."
+  PlayerChatClearReceived: '&6<player> &acleared your chat.'
+  CharSpam: '&cYou spammed the same character too much!'
+  TooFast: '&cYou are sending messages too fast!'
+  Repeat: '&cYou cannot send the same message twice in a row!'
+  Advertisement: '&cYou are not allowed to advertise!'
+  FrozeChat: '&aThe chat has been frozen by &6<player>&a.'
+  UnfrozeChat: '&aThe chat has been unfrozen by &6<player>&a.'
+  ChatIsFrozen: '&cYou cannot send a message because the chat is frozen right now!'
+  Swear: '&cYou cannot use swear words!'
+AntiSpam:
+  TimeBetweenMessages: 5
+  AllowConsecutiveRepeats: false
+  MaxConsecutiveSameCharacter: 5
+AntiAdvertisement:
+  AllowIPAddresses: false
+  AllowWebsites: false
+  WebExtensions: 'com/net/org/co/uk/info/tk/xyz'
+AntiSwear:
+  AllowSwearing: false
+  SwearWords: 'censoredForTheInternet'
+Grammar:
+  FixContractions: true
